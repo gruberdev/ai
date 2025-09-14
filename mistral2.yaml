@@ -74,6 +74,5 @@ config_file: |
       [AVAILABLE_TOOLS] [{{range .Functions}}{"type": "function", "function": {"name": "{{.Name}}", "description": "{{.Description}}", "parameters": {{toJson .Parameters}} }}{{end}} ] [/AVAILABLE_TOOLS]{{.Input }}
 
 files:
-- filename: "nous-hermes-llama2-13b.ggmlv3.q5_K_M.bin"
-  uri: "https://huggingface.co/mradermacher/Mistral-Nemo-Gutenberg-Encore-12B-i1-GGUF/resolve/main/Mistral-Nemo-Gutenberg-Encore-12B.i1-Q3_K_M.gguf
-
+  - filename: "nous-hermes-llama2-13b.ggmlv3.q5_K_M.bin"
+    uri: "https://huggingface.co/mradermacher/Mistral-Nemo-Gutenberg-Encore-12B-i1-GGUF/resolve/main/Mistral-Nemo-Gutenberg-Encore-12B.i1-Q3_K_M.gguf"
