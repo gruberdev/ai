@@ -1,0 +1,34 @@
+---
+# LocalAI Model Index
+# Usage: curl $LOCALAI/models/apply -H "Content-Type: application/json" -d '{"id": "gruberdev/ai@MODEL_NAME"}'
+
+models:
+  - id: "gruberdev/ai@mistral"
+    name: "Mistral"
+    description: "Mistral model with function calling capabilities"
+    config_file: "mistral2.yaml"
+    tags: ["llm", "chat", "function-calling"]
+
+  - id: "gruberdev/ai@whisper"
+    name: "Whisper"
+    description: "OpenAI Whisper for speech-to-text"
+    config_file: "whisper.yaml"
+    tags: ["stt", "speech-to-text", "audio"]
+
+  - id: "gruberdev/ai@whisper2"
+    name: "Whisper v2"
+    description: "OpenAI Whisper v2 for speech-to-text"
+    config_file: "whisper2.yaml"
+    tags: ["stt", "speech-to-text", "audio"]
+
+  - id: "gruberdev/ai@stablediffusion3"
+    name: "Stable Diffusion 3"
+    description: "Text-to-image generation model"
+    config_file: "stablediffusion3.yaml"
+    tags: ["diffusion", "text-to-image", "image-generation"]
+
+# Example usage:
+# LOCALAI=http://localhost:8080
+# curl $LOCALAI/models/apply -H "Content-Type: application/json" -d '{"id": "gruberdev/ai@mistral"}'
+# curl $LOCALAI/models/apply -H "Content-Type: application/json" -d '{"id": "gruberdev/ai@whisper"}'
+# curl $LOCALAI/models/apply -H "Content-Type: application/json" -d '{"id": "gruberdev/ai@stablediffusion3"}'
