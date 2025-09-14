@@ -1,0 +1,27 @@
+name: whisper-large-v3-turbo
+backend: faster-whisper
+parameters:
+  device: cuda
+  compute_type: float16
+  device_index: 0
+  beam_size: 5
+  language: auto
+
+config_file: |
+  gpu_layers: 1000
+  debug: true
+  mmap: false
+  f16: true
+  embeddings: false
+  prompt_cache_all: true
+  prompt_cache_ro: false
+
+files:
+  - filename: "config.json"
+    uri: "https://huggingface.co/ctranslate2-4you/whisper-large-v3-turbo-ct2-float16/resolve/main/config.json"
+  - filename: "model.bin"
+    uri: "https://huggingface.co/ctranslate2-4you/whisper-large-v3-turbo-ct2-float16/resolve/main/model.bin"
+  - filename: "tokenizer.json"
+    uri: "https://huggingface.co/ctranslate2-4you/whisper-large-v3-turbo-ct2-float16/resolve/main/tokenizer.json"
+  - filename: "vocabulary.txt"
+    uri: "https://huggingface.co/ctranslate2-4you/whisper-large-v3-turbo-ct2-float16/resolve/main/vocabulary.txt"
