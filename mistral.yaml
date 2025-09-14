@@ -1,7 +1,7 @@
 ---
 name: "mistral"
 config_file: |
-  backend: "llama-cpp"
+  backend: "cuda12-llama-cpp"
   context_size: 8192
   gpu_layers: 1000
   debug: true
