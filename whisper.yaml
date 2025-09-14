@@ -24,4 +24,4 @@ files:
   - filename: "tokenizer.json"
     uri: "https://huggingface.co/ctranslate2-4you/whisper-large-v3-turbo-ct2-float16/resolve/main/tokenizer.json"
   - filename: "vocabulary.json"
-    uri: "https://huggingface.co/ctranslate2-4you/whisper-large-v3-turbo-ct2-float16/resolve/main/vocabulary.txt"
+    uri: "https://huggingface.co/ctranslate2-4you/whisper-large-v3-turbo-ct2-float16/resolve/main/vocabulary.json"
